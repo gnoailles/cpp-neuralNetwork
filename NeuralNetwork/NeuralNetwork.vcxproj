@@ -97,7 +97,8 @@
       <AdditionalDependencies>liblapack.lib;libblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir) 
+      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir)
+ 
 copy $(SolutionDir)Dependencies\LAPACK\lib\$(PlatformTarget)\liblapack.dll $(ProjectDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -113,7 +114,8 @@ copy $(SolutionDir)Dependencies\LAPACK\lib\$(PlatformTarget)\liblapack.dll $(Pro
       <AdditionalDependencies>liblapack.lib;libblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir) 
+      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir)
+ 
 copy $(SolutionDir)Dependencies\LAPACK\lib\$(PlatformTarget)\liblapack.dll $(ProjectDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -133,7 +135,8 @@ copy $(SolutionDir)Dependencies\LAPACK\lib\$(PlatformTarget)\liblapack.dll $(Pro
       <AdditionalDependencies>liblapack.lib;libblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir) 
+      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir)
+ 
 copy $(SolutionDir)Dependencies\LAPACK\lib\$(PlatformTarget)\liblapack.dll $(ProjectDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -153,14 +156,15 @@ copy $(SolutionDir)Dependencies\LAPACK\lib\$(PlatformTarget)\liblapack.dll $(Pro
       <AdditionalDependencies>liblapack.lib;libblas.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir) 
+      <Command>copy $(SolutionDir)Dependencies\BLAS\lib\$(PlatformTarget)\libblas.dll $(ProjectDir)
+ 
 copy $(SolutionDir)Dependencies\LAPACK\lib\$(PlatformTarget)\liblapack.dll $(ProjectDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="src\NeuralNetworkLayer.cpp" />
     <ClCompile Include="src\NeuralNetwork.cpp" />
-    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\NeuralNetwork.h" />
